@@ -77,12 +77,15 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
             className="space-y-8"
-            onSubmit={(e) => e.preventDefault()}
+            action="https://formspree.io/f/mgvykqwo"
+            method="POST"
           >
+            <input type="hidden" name="_next" value="/" />
             <div className="space-y-2">
               <label className="text-sm uppercase tracking-wider text-gray-500">Name</label>
               <input 
                 type="text" 
+                name="name"
                 className="w-full bg-transparent border-b border-white/10 py-4 text-white focus:border-white outline-none transition-colors text-lg"
                 placeholder="John Doe"
               />
@@ -91,6 +94,7 @@ const Contact = () => {
               <label className="text-sm uppercase tracking-wider text-gray-500">Email</label>
               <input 
                 type="email" 
+                name="email"
                 className="w-full bg-transparent border-b border-white/10 py-4 text-white focus:border-white outline-none transition-colors text-lg"
                 placeholder="john@example.com"
               />
@@ -99,6 +103,7 @@ const Contact = () => {
               <label className="text-sm uppercase tracking-wider text-gray-500">Message</label>
               <textarea 
                 rows="4"
+                name="message"
                 className="w-full bg-transparent border-b border-white/10 py-4 text-white focus:border-white outline-none transition-colors text-lg resize-none"
                 placeholder="Tell me about your project..."
               ></textarea>

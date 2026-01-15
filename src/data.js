@@ -97,7 +97,7 @@ export const projects = [
     period: "Jan’24 – May’24",
     description:
       "Automated backups from local directories to Azure Blob Storage using Python and Azure SDK.",
-    url: "#",
+    url: "https://github.com/awall5/Azure-Backup",
     image: new URL("./assets/azure_backup.svg", import.meta.url).href,
     points: [
       "Developed a Python script to automate file backups from a local directory to Azure Blob Storage.",

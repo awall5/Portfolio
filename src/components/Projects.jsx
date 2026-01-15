@@ -138,6 +138,7 @@ const Projects = () => {
                 key={index}
                 variants={listItem}
                 onMouseEnter={() => setHoveredIndex(index)}
+                onClick={() => window.open(projects[index].url, '_blank')}
                 className={`group py-12 border-b border-white/10 cursor-pointer transition-all duration-300 ${
                   hoveredIndex === index ? 'opacity-100' : 'opacity-40 hover:opacity-100'
                 }`}
